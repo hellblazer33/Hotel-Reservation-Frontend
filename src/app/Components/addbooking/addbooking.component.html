@@ -1,0 +1,72 @@
+<p>addbooking works!</p>
+<body>
+
+    <head>
+        <title>Add Booking form</title>
+    </head>
+    
+    
+        <!-- <header class="header-content header">
+            <div class="logo-content">
+                <img src="assets/logo.png" alt="image">
+                <div>
+                    <span class="emp-text"> Add</span><br>
+                    <span class="emp-text emp-payroll">Booking</span>
+    
+                </div>
+            </div>
+        </header> -->
+        <div class="form-content">
+            <div class="form">
+                <form [formGroup]="registerForm">
+                    <div class="form-head"> Add Booking form</div>
+                    <div class="row-content">
+                        <label class="label text" for="name">UserId</label>
+                        <input class="input" type="text" id="name" name="name" formControlName="userId"
+                            placeholder="" required>
+    
+                    </div>
+                    
+                    <div class="row-content">
+                        <label class="label text" for="name">Room Number</label>
+                        <input class="input" type="text" id="name" name="name" formControlName="roomId"
+                            placeholder="" required>
+    
+                    </div>
+                    
+    
+                    
+    
+                    <div class="row-content">
+                        <label class="label text" for="startDate">Start Date</label>
+                        <input type="date" id="start" name="jobstart" value="2016-01-01" min="2016-01-01" max="2022-1012"
+                            formControlName="startDate">
+    
+    
+                    </div>
+                    <div class="row-content">
+                        <label class="label text" for="endDate">End Date</label>
+                        <input type="date" id="end" name="jobend" value="2016-01-01" min="2016-01-01" max="2022-1012"
+                            formControlName="endDate">
+    
+    
+                    </div>
+    
+                    <div class="row-content">
+                    <label class="label text" for="notes">Notes</label>
+                    <textarea id="notes"  class="input" formControlName="notes" name="Notes" placeholder="" style="height: 100px;"></textarea>
+                </div>
+                    <div class="buttonParent">
+                        <a href="./EmpPayRoll.html" class="resetButton button cancelButton">Cancel</a>
+                        <div class="submit-reset">
+                            <button type="submit" class="button submitButton" (click)="onSubmit()">Submit</button>
+                            <button type="reset" class="resetButton button">Reset</button>
+                        </div>
+                    </div>
+    
+    
+                </form>
+            </div>
+        </div>   
+    
+    </body>

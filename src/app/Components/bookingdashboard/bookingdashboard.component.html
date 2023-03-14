@@ -1,0 +1,61 @@
+<p>bookingdashboard works!</p>
+<head>
+    
+    <title>Employee Payroll App</title>
+</head>
+<body>
+    <header class="header-content header">
+        <!-- <div class="logo-content">
+            <img src="../../../assets/rosehotel.jpg" alt="image" style="width: 50px;" alt="displayed">
+            <div>
+                <span class="emp-text">Hotel Rose</span><br>
+                <span class="emp-text emp-payroll">Bookings</span><br>
+            </div>
+        </div> -->
+    </header>
+    <div class="main-contents">
+        <div class="header-content">
+            <div class="emp-detail-text">
+                Booking Details <div class="emp-count">5</div>
+            </div>
+            <!-- <button class="add-button" routerLink="/addemp">Add User</button> -->
+        </div>
+        <div class="table-main">
+            <table id="display" class="table">
+                <tr>
+                    <th>Booking Id</th>
+                    <th>Room Number</th>
+                    <th>Room Price</th>
+                    <th>Booking Date</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                </tr>
+               
+                <tr *ngFor="let user of users">  
+                     
+                    <!-- <td>
+                        
+                      <img src={{user.profile}} alt=""> 
+                        {{ user.name }}
+                       
+                    </td>   -->
+                    <td>{{ user.bookingId }}</td>  
+                    <td>{{ user.roomId }}</td>
+                    <td>{{ user.price }}</td> 
+                    <td>{{ user.bookingDate }}</td> 
+                    <td>{{ user.startDate }}</td> 
+                    <td>{{ user.endDate }}</td> 
+                    
+                    <td>
+                        <!-- <img class="delete"src="../../../assets/delete.png"  alt="image" (click)="onDelete(user.id)">
+                        <img class="edit" src="../../../assets/edit.png" alt="image" (click)="openDialog(user)"> -->
+                        
+                    </td>
+
+                  
+                    
+                  </tr>  
+            </table>
+        </div>
+    </div>
+</body>

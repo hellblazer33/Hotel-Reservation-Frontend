@@ -1,0 +1,111 @@
+<!-- <p>registration works!</p> -->
+
+<div class="section">
+
+
+    <div class="form">
+
+        <!-- <div class="leftdiv"> -->
+        <div fxLayout="column" fxLayoutAlign="space-evenly center">
+
+            <div class="heading">
+                <p class="color1">H</p>
+                <p class="color2">O</p>
+                <p class="color4">T</p>
+                <p class="color4">E</p>
+                <p class="color5">L</p>
+                <pre>  </pre>
+                <p class="color6">R</p>
+                <p class="color4">O</p>
+                <p class="color4">S</p>
+                <p class="color5">E</p>
+
+            </div>
+
+
+            <div class="title">
+                <p>Create your Hotel Login Account</p>
+            </div>
+
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                <div class="firstandlastname">
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>Full name</mat-label>
+                        <input type="text" formControlName="fullname" matInput placeholder="Fullname">
+                        <mat-error>Enter Full Name</mat-error>
+                    </mat-form-field>
+
+                    <!-- <mat-form-field appearance="outline">
+                        <mat-label>Last name</mat-label>
+                        <input type="text" formControlName="lastName" matInput placeholder="Last name">
+                        <mat-error>Enter last name</mat-error>
+                    </mat-form-field> -->
+                </div>
+
+                <div class="username">
+
+                    <mat-form-field style="width: 97%;" appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input type="text" formControlName="email" matInput placeholder="user name">
+                        <mat-error>Choose a Gmail address</mat-error>
+                        <mat-hint>You can use letters,numbers & periods</mat-hint>
+                    </mat-form-field>
+
+                </div>
+                <div class="mobile">
+
+                    <mat-form-field style="width: 60%;" appearance="outline">
+                        <mat-label>Mobile</mat-label>
+                        <input type="text" formControlName="mobile" matInput placeholder="mobile">
+                    </mat-form-field>
+
+                </div>
+                <div class="emailbutton">
+                    <button class="button">Use my current e-mail address instead</button>
+
+                </div>
+                <div class="passwordandconfirm">
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input type="text" formControlName="password" matInput placeholder="Password">
+                        <mat-error>Enter a password</mat-error>
+                        <mat-hint>Use 8 or more characters with a mix of letters, numbers &<br>symbols</mat-hint>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>Confirm</mat-label>
+                        <input type="text" formControlName="confirm" matInput placeholder="confirm">
+                        
+                    </mat-form-field>
+
+                </div>
+
+                <div class="checkbox">
+                    <mat-checkbox class="example-margin">Show password</mat-checkbox>
+                </div>
+
+                <div class="signinandnextbutton">
+                    <button class="button1" routerLink="/signin">Sign in instead</button>
+
+                    <button class="button2">Next</button>
+
+
+                </div>
+            </form>
+
+        </div>
+
+        <div class="rightdiv">
+            <div class="imageandpara">
+
+                <img class="image" src="../../../assets/account.svg" alt="">
+                <p class="para">One hotel account for all<br>working for you.</p>
+
+
+            </div>
+
+        </div>
+
+    </div>

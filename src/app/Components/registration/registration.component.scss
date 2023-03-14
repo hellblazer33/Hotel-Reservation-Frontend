@@ -1,0 +1,313 @@
+.section{
+    
+    width: 99vw;
+    height: 100vh;
+    background-color: white;
+}
+.form{
+    border: 1px solid grey;
+    display: flex;
+    
+    width: 60%;
+    height: 92%;
+    position: relative;
+    left: 21%;
+    top: 5%;
+    border-radius: 10px;
+    
+    
+}
+
+.heading{
+    
+    line-height: 1;  
+    height: 10%;
+    width: 20%;
+    text-align: start;
+    display: flex;
+    position: relative;
+    left: -29%;
+    top: 3%;
+    font-family   : 'Google Sans', 'Noto Sans Myanmar UI', arial, sans-serif;
+    font-size     : 20px;
+    font-weight   : 400;
+}
+.color1{
+    color: blue;
+}
+.color2{
+    color: red;
+
+}
+.color3{
+    color:yellow;
+
+}
+.color4{
+    color: blue;
+
+}
+.color5{
+    color: green;
+
+}
+.color6{
+    color: red;
+
+}
+.title{
+    
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 0%;
+    top: -5%;
+    width: 80%;
+    color: #202124;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.3333;
+    
+}
+.firstandlastname{
+    
+    position: relative;
+    top: -12%;
+    left: 8%;
+    width: 97%;
+    
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    height: 35px;
+    padding: 6px 8px;
+    margin: 2px;
+    border-radius: 3px;
+
+}
+.username{
+    
+    position: relative;
+    left: 8%;
+    width: 100%;
+    top: -10%;
+    font-size: 14px;
+    height: 10%;
+    padding: 6px 8px;
+    margin: 2px;
+    border-radius: 3px;
+    margin-top: 8%;
+}
+
+.emailbutton{
+    
+    position: relative;
+    left: 8%;
+    width: 70%;
+    top: -3%;
+    font-size: 14px;
+    height: 40px;
+    padding: 6px 8px;
+    margin: 2px;
+    
+   
+    
+}
+
+.mobile{
+    position: relative;
+    left: 8%;
+    width: 70%;
+    top: -3%;
+    font-size: 14px;
+    height: 40px;
+    padding: 6px 8px;
+    margin: 2px;
+}
+.button{
+    
+    position: relative;
+    
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    color: var(--gm-colortextbutton-ink-color,#1a73e8);
+    background-color: transparent;
+    font-size: .875rem;
+    letter-spacing: .0107142857em;
+    font-weight: 500;
+    text-transform: none;
+    cursor: pointer;
+    border: none;
+    
+
+}
+.passwordandconfirm{
+    
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 8%;
+    width: 97%;
+    top: -2%;
+    font-size: 14px;
+    height: 12%;
+    padding: 6px 8px;
+    margin: 2px;
+}
+.checkbox{
+    
+    position: relative;
+    left: 9%;
+    width: 70%;
+    top: 6%;
+    font-size: 14px;
+    height: 25px;
+    padding: 6px 8px;
+    margin: 2px;
+    cursor: pointer;
+    margin-top: 2%;
+
+}
+.example-margin{
+    
+    position: relative;
+    width: 80%;
+    
+}
+.signinandnextbutton{
+   
+    position: relative;
+    left: 8%;
+    width: 100%;
+    
+    top: 6%;
+    font-size: 14px;
+    height: 20px;
+    padding: 6px 8px;
+    margin: 2px;
+    margin-top: 10%;
+}
+.button1{
+    
+    color: var(--gm-colortextbutton-ink-color,#1a73e8);
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    background-color: transparent;
+    font-size: .875rem;
+    letter-spacing: .0107142857em;
+    font-weight: 500;
+    text-transform: none;
+    cursor: pointer;
+    border: none;
+}
+.button2{
+    
+    position: relative;
+    left: 50%;
+    
+    background-color: var(--gm-colortextbutton-ink-color,#1a73e8);
+    color: white;
+    border-radius: 6px;
+    width: 22%;
+    height: 180%;
+    font-size: .875rem;
+    letter-spacing: .0107142857em;
+    font-weight: 500;
+    text-transform: none;
+    cursor: pointer;
+    border: none;
+
+}
+.imageandpara{
+    
+    position: relative;
+    left:42%;
+    width: 250px;
+    height: 40%;
+    top: 22%;
+    
+}
+
+.image{
+  
+    width: 250px;
+    height: 250px;
+}
+.para{
+    
+    position: relative;
+    left: 8%;
+    bottom: 5%;
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+
+
+
+@media only screen and (max-width: 480px){
+
+
+    .imageandpara{
+  
+        display: none;
+    }
+ 
+
+    .form{
+        border: 1px solid grey;
+        display: flex;
+        
+        width: 455px;
+        height: 92%;
+        position: relative;
+        left: 21%;
+        top: 5%;
+        border-radius: 10px;
+        
+        
+    }
+
+    .button2{
+    
+        position: relative;
+        left: 20%;
+        
+        background-color: var(--gm-colortextbutton-ink-color,#1a73e8);
+        color: white;
+        border-radius: 6px;
+        width: 22%;
+        height: 180%;
+        font-size: .875rem;
+        letter-spacing: .0107142857em;
+        font-weight: 500;
+        text-transform: none;
+        cursor: pointer;
+        border: none;
+    
+    }
+
+    .section{
+    
+        width: 100px;
+        height: 100%;
+        background-color: white;
+    }
+
+    .firstandlastname{
+    
+    position: relative;
+    top: -12%;
+    left: 8%;
+    width: 97%;
+    
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    height: 35px;
+    padding: 6px 4px;
+    margin: 2px;
+    border-radius: 3px;
+
+}
+
+}
